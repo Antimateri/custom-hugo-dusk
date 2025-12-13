@@ -93,6 +93,7 @@ SectionPagesMenu = "main"
 
 [params]
   mainSections = ['blog']
+  codeberg = "codeberg id"
   github = "github id"
   gitlab = "gitlab id"
   twitter = "twitter id"

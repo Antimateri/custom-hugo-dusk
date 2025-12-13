@@ -61,6 +61,7 @@ SectionPagesMenu = "main"
   mainSections = ['blog']
   email = "myemail"
   github = "github id"
+  codeberg = "codeberg id"
   #gitlab = "gitlab id"
   twitter = "twitter id"
   #linkedin = "linkedin id"
