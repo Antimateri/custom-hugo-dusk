@@ -14,6 +14,10 @@ body {
   padding: 1em 0.2em 0.3em 0.2em;
 }
 
+.main .header-bar2 {
+  padding: 1em 0.2em 0.002em 0.2em;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -150,7 +154,6 @@ th, td {
 .siteTitle2 p {
   font-size: 1em;
   text-decoration: none;
-  text-align: up;
 }
 
 .articleheader_data {
