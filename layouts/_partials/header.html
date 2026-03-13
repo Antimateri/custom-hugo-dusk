@@ -1,32 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-
-{{ partial "head.html" . }}
-
-<body>
-<div class="main">
-<header>
-
-<div class="header-bar">
-
-  <nav>
-    {{if .Site.Params.subtitle}}
-    <div class="siteTitle2">
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-      <p>{{ .Site.Params.subtitle }}</p>
-    </div> <!--siteTitle-->
-    {{ else }}
-    <div class="siteTitle">
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    </div> <!--siteTitle-->
-    {{ end }}
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-    <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
-    {{ end }}
-
-  </nav>
-
-</div>
-
-</header>
+{{if .Site.Params.subtitle}}
+{{ partial "header2.html" . }}
+{{ else }}
+{{ partial "header1.html" . }}
+{{ end }}
