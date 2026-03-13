@@ -181,7 +181,6 @@ th { background: var(--main-bg-color); }
   color: var(--main-sec);
 }
 
-/* box styling for prerequisites, similar to summary */
 .prerequisites {
   border: 1px solid var(--border-color);
   background-color: var(--secondary-bg-color);
