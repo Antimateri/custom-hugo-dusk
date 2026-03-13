@@ -177,6 +177,7 @@ th { background: var(--main-bg-color); }
 .pages {
   border: 1px solid var(--border-color);
   background-color: var(--secondary-bg-color);
+  color: var(--main-text);
   padding: 0.5em;
   border-radius: 0.2em;
   margin: 0em 0;

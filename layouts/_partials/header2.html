@@ -10,8 +10,10 @@
 <div class="header-bar2">
 
   <nav>
-    <div class="siteTitle2">
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <div style="display:block">
+      <div class="siteTitle2">
+        <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      </div>
       <div style="display: flex; align-items: center;"> 
         {{ $currentPage := . }}
         {{ range .Site.Menus.other }}
