@@ -15,7 +15,7 @@
       <p>{{ .Site.Params.subtitle }}</p>
     </div> <!--siteTitle-->
     {{ $currentPage := . }}
-    {{ range .Site.Params.other }}
+    {{ range .Site.Menus.other }}
     <a class="nav-item" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
     {{ end }}
     <br>
