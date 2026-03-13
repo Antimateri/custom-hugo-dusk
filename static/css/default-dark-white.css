@@ -99,6 +99,9 @@ th { background: var(--main-bg-color); }
 .siteTitle a {
   color: var(--main-sec);
 }
+.siteTitle2 a {
+  color: var(--main-sec);
+}
 
 .post {
   background: var(--main-bg-color);

@@ -23,6 +23,22 @@ a {
   color: var(--main-text);
 }
 
+h1 {
+  color: var(--main-text);
+}
+h2 {
+  color: var(--main-text);
+}
+h3 {
+  color: var(--main-text);
+}
+h4 {
+  color: var(--main-text);
+}
+h5 {
+  color: var(--main-text);
+}
+
 .__h_instagram.card {
   border: 1px solid var(--border-color) !important;
 }
@@ -59,8 +75,20 @@ code {
   background-color: var(--main-bg-color) !important;
 }
 
+.post .title {
+  color: var(--main-sec);
+}
+
+.post .post-header {
+  border-bottom: 4px solid var(--secondary-bg-color);
+  border-radius: 0.2em;
+}
+
+.post .subtitle {
+}
+
 blockquote {
-  background: var(--main-bg-color);
+  background: var(--secondary-bg-color);
   border-left: 3px solid var(--main-sec);
 }
 
@@ -71,15 +99,9 @@ th { background: var(--main-bg-color); }
 .siteTitle a {
   color: var(--main-sec);
 }
-
-/*.post {
-  background: var(--secondary-bg-color);
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  border-top: 1px solid var(--border-color);
-  border-radius: 0.2em;
-  box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
-}*/
+.siteTitle2 a {
+  color: var(--main-sec);
+}
 
 .post {
   background: var(--main-bg-color);
@@ -157,6 +179,42 @@ th { background: var(--main-bg-color); }
   color: #dcddde;
 }
 
+.prerequisite-title {
+  font-weight: bold;
+  color: var(--main-sec);
+}
+
+.prerequisites {
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-bg-color);
+  padding: 0.5em;
+  border-radius: 0.2em;
+  margin: 0em 0;
+}
+
+.pages {
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-bg-color);
+  color: var(--main-text);
+  padding: 0.5em;
+  border-radius: 0.2em;
+  margin: 0em 0;
+}
+
+.pages2 {
+  border: 1px solid var(--border-color);
+  color: var(--main-bg-color);
+  background-color: var(--main-sec);
+  padding: 0.5em;
+  border-radius: 0.2em;
+  margin: 0em 0;
+}
+ 
+.pages:hover {
+  color: var(--main-bg-color);
+  background-color: var(--main-sec);
+}
+
 .content-item {
   background: var(--secondary-bg-color);
   border: 1px solid var(--border-color);
@@ -208,7 +266,7 @@ th { background: var(--main-bg-color); }
 .err-404 {
   border: 1px solid var(--border-color);
   border-radius: 0.2em;
-  background: var(--secondary-bg-color);
+  /*background: var(--secondary-bg-color);*/
   box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
 }
 
