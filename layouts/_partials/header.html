@@ -12,8 +12,8 @@
   <nav>
     <div class="siteTitle">
       <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-      {{if .Site.Subtitle}}
-        <h5>{{ .Site.Subtitle }}</h5>
+      {{if .Site.Params.subtitle}}
+        <h5>{{ .Site.Params.subtitle }}</h5>
       {{ end }}
     </div> <!--siteTitle-->
 
