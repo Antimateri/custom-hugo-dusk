@@ -98,6 +98,10 @@ nav {
   font-weight: bold;
 }
 
+.nav-item.active {
+  text-decoration: underline;
+}
+
 .nav-item-title {
   padding: 0.2em;
 }
