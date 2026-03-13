@@ -13,10 +13,20 @@
     <div class="siteTitle">
       <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
     </div> <!--siteTitle-->
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-    <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
-    {{ end }}
+    <div style="display: block;">
+      <div style="display: flex;"> 
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.other }}
+        <a href="{{.URL}}"><div class="toc-box pages">{{ .Name }}</div></a>
+        {{ end }}
+      </div>
+      <div style="display: flex;">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
+        {{ end }}
+      </div>
+    </div>
 
   </nav>
 
