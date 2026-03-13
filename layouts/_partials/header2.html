@@ -14,6 +14,12 @@
       <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
       <p>{{ .Site.Params.subtitle }}</p>
     </div> <!--siteTitle-->
+    <div>
+    {{ $currentPage := . }}
+    {{ range .Site.Params.other }}
+    <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
+    {{ end }}
+    </div>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
