@@ -23,6 +23,22 @@ a {
   color: var(--main-text);
 }
 
+h1 {
+  color: var(--main-text);
+}
+h2 {
+  color: var(--main-text);
+}
+h3 {
+  color: var(--main-text);
+}
+h4 {
+  color: var(--main-text);
+}
+h5 {
+  color: var(--main-text);
+}
+
 .__h_instagram.card {
   border: 1px solid var(--border-color) !important;
 }
