@@ -92,10 +92,16 @@ nav {
   flex-flow: column;
 }
 
+.page 
+
 .nav-item {
   font-size: 1.3em;
   text-decoration: none;
   font-weight: bold;
+}
+
+.nav-item2 {
+  text-decoration: none;
 }
 
 .nav-item.active {

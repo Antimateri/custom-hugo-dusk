@@ -17,7 +17,7 @@
       <div style="display: flex; align-items: right;"> 
         {{ $currentPage := . }}
         {{ range .Site.Menus.other }}
-        <a href="{{.URL}}"><div class="toc-box pages">{{ .Name }}</div></a>
+        <a class="nav-item2" href="{{.URL}}"><div class="toc-box {{if eq .Name "Everything"}} pages2 {{ else }} pages {{ end }}">{{ .Name }}</div></a>
         {{ end }}
       </div>
       <div style="display: flex;">
