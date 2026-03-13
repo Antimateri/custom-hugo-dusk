@@ -16,9 +16,9 @@
     </div> <!--siteTitle-->
     {{ $currentPage := . }}
     {{ range .Site.Params.other }}
-    <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
+    <a class="nav-item" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
     {{ end }}
-    <p></p>
+    <br>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
