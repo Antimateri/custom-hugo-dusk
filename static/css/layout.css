@@ -153,11 +153,13 @@ th, td {
 .siteTitle2 a {
   font-size: 2.5em;
   text-decoration: none;
+  margin-bottom: 0em;
 }
 
 .siteTitle2 p {
-  font-size: 1em;
+  font-size: 1.25em;
   text-decoration: none;
+  margin-bottom: 0em;
 }
 
 .articleheader_data {
