@@ -6,7 +6,8 @@ body {
 
 .main {
   margin: auto;
-  max-width: 42em;
+  /*max-width: 42em;*/
+  max-width: 70%;;
 }
 
 .main .header-bar {
@@ -146,12 +147,112 @@ th, td {
   flex-flow: row wrap;
 }
 
-.post .title {
+/* ensure prerequisite list appears as a vertical stack on the right */
+.articleheader_data .prerequisites {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* keep list flush right */
+}
+.articleheader_data .prerequisites ul {
+  margin: 0;
+  padding: 0 1em; /* indent markers a bit */
+  list-style: disc inside;
+}
+.articleheader_data .prerequisites .prerequisite {
+  margin: 0.2em 0;
+  /* ensure each list item is right-aligned by itself */
+  text-align: right;
+}
+
+/* header alignment helpers */
+.articleheader_data .header-left {
+  display: flex;
+  align-items: center;
+}
+/* header-right inside articleheader_data only used when metadata row present */
+.articleheader_data .header-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* push to right side */
+  text-align: right;
+}
+
+/* new column layout for title/subtitle/tags + prerequisites */
+.header-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* ensure columns align at top */
+}
+.header-columns .header-left {
+  flex: 1 1 auto;
+}
+.header-columns .header-right {
+  flex: 0 0 auto;
+  align-self: flex-start; /* push this column to the top */
+}
+
+/*.post .title {
   text-align: center;
 }
 
+.post .subtitle {
+  text-align: center;
+}*/
+
 .post .content{
-  padding: 1em;
+  padding-left: 5%;
+}
+
+/* table of contents box styling (used when TOC appears above article) */
+.toc-box {
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-bg-color);
+  padding: 0em;
+  border-radius: 0.2em;
+  margin: 0em 0;
+}
+/* remove underlines from links in toc-box */
+.toc-box a {
+  text-decoration: none;
+}
+/* collapse/expand wrapper */
+.toc-box details {
+  margin: 0;
+}
+.toc-box summary {
+  list-style: none; /* remove default marker */
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--main-sec);
+  margin-bottom: 0em;
+}
+.toc-box summary::-webkit-details-marker {
+  display: none;
+}
+/* reuse prerequisite-title for heading text when not using details */
+.toc-box .prerequisite-title {
+  display: block;
+  margin-bottom: 0em;
+}
+/* left-align TOC links */
+#TableOfContents {
+  text-align: left;
+}
+/* reduce spacing between TOC levels */
+#TableOfContents li {
+  margin: 0.1em 0;
+}
+#TableOfContents ul {
+  padding-left: 1em;
+  margin: 0;
+}
+#TableOfContents ul ul {
+  padding-left: 1.5em;
+}
+
+.post .post-header {
+  padding-left: 1%;
+  padding-bottom: 0.5em;
 }
 
 .post .date {
@@ -541,7 +642,7 @@ th, td {
 }
 
 .metadata .series a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .metadata .syndicate a {

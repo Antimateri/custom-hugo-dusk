@@ -2,7 +2,7 @@
 <main>
 
   {{ range (where .Site.RegularPages "Type" "in" (union site.Params.mainSections (slice "micro"))) }}
-    {{ .Render "li" }}
+    {{ .Render "summary" }}
   {{ end }}
 
 </main>
