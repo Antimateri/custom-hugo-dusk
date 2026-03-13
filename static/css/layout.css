@@ -92,7 +92,15 @@ nav {
   flex-flow: column;
 }
 
-.page 
+.page{
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.page2{
+  font-size: 1em;
+  text-decoration: none;
+}
 
 .nav-item {
   font-size: 1.3em;
@@ -102,10 +110,6 @@ nav {
 
 .nav-item2 {
   text-decoration: none;
-}
-
-.nav-item.active {
-  text-decoration: underline;
 }
 
 .nav-item-title {

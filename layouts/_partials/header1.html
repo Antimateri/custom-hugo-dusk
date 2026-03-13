@@ -20,7 +20,7 @@
         <a class="nav-item2" href="{{.URL}}"><div class="toc-box {{if eq .Name "Everything"}} pages2 {{ else }} pages {{ end }}">{{ .Name }}</div></a>
         {{ end }}
       </div>
-      <div style="display: flex;">
+      <div style="display: flex; align-items: right;">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
