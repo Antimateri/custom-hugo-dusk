@@ -189,6 +189,14 @@ th { background: var(--main-bg-color); }
   border-radius: 0.2em;
   margin: 0em 0;
 }
+
+.pages {
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-bg-color);
+  padding: 0.5em;
+  border-radius: 0.2em;
+  margin: 0em 0;
+}
  
 .content-item {
   background: var(--secondary-bg-color);
