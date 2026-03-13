@@ -16,7 +16,7 @@
     </div> <!--siteTitle-->
     {{ $currentPage := . }}
     {{ range .Site.Menus.other }}
-    <a class="nav-item" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
+    <a class="nav-item" href="{{.URL}}"><div class="meta">{{ .Name }}</div></a>
     {{ end }}
     <br>
     {{ $currentPage := . }}
