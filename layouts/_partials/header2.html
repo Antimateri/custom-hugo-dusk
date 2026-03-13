@@ -15,7 +15,7 @@
       <p>{{ .Site.Params.subtitle }}</p>
     </div> <!--siteTitle-->
     <div style="display: block;">
-      <div style="display: flex;"> 
+      <div style="display: flex; align-items: right;"> 
         {{ $currentPage := . }}
         {{ range .Site.Menus.other }}
         <a href="{{.URL}}"><div class="toc-box pages">{{ .Name }}</div></a>
