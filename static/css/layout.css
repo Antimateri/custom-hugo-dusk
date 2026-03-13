@@ -147,6 +147,12 @@ th, td {
   text-decoration: none;
 }
 
+.siteTitle2 p {
+  font-size: 1em;
+  text-decoration: none;
+  text-align: up;
+}
+
 .articleheader_data {
   display: -webkit-flex;
   -webkit-justify-content: space-between;
@@ -776,6 +782,12 @@ th, td {
   }
 
   .siteTitle {
+    flex-grow: 2;
+    text-align: left;
+    flex-basis: 0;
+  }
+
+  .siteTitle2 {
     flex-grow: 2;
     text-align: left;
     flex-basis: 0;
