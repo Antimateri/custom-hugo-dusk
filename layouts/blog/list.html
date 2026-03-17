@@ -2,11 +2,10 @@
 
 <main>
 
-{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+{{ $pages := where .RegularPages "Params.menu" "ne" "main" }}
+{{ $paginator := .Paginate $pages }}
   {{ range $paginator.Pages }}
-    {{ if ne .Params.menu "main"}}
     {{ .Render "summary" }}
-    {{ end }}
   {{ end }}
 
 {{ partial "paginator-menu.html" . }}
