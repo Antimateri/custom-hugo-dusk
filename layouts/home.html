@@ -3,7 +3,13 @@
 
 <main>
 
-{{ $mainPages := where (where .Site.RegularPages "Type" "in" site.Params.mainSections) "Params.menu" "ne" "main" }}
+{{ $sectionPages := where .Site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $mainPages := slice }}
+{{ range $sectionPages }}
+  {{ if ne .Params.menu "main" }}
+    {{ $mainPages = $mainPages | append . }}
+  {{ end }}
+{{ end }}
 
 {{if .Site.Params.enable_separate_main_page }}
   <div class=author>
