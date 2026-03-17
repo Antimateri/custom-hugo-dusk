@@ -4,8 +4,10 @@
 
 {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
   {{ range $paginator.Pages }}
+    {{ if ne .Title "About"}}
     {{ .Render "summary" }}
-{{ end }}
+    {{ end }}
+  {{ end }}
 
 {{ partial "paginator-menu.html" . }}
 
