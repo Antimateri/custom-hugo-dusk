@@ -8,10 +8,33 @@ body {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  html {
+    font-size: 118%;
+  }
+
+  body {
+    font-size: 1.08rem;
+  }
+
   .main {
     margin: auto;
     /*max-width: 42em;*/
     max-width: 98%;;
+  }
+
+  .post .content {
+    padding-left: 2%;
+  }
+}
+
+/* modern phone viewport fallback */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 115%;
+  }
+
+  body {
+    font-size: 1.05rem;
   }
 }
 
