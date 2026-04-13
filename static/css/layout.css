@@ -4,10 +4,25 @@ body {
   margin: 0;
 }
 
-.main {
-  margin: auto;
-  /*max-width: 42em;*/
-  max-width: 70%;;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .main {
+    margin: auto;
+    /*max-width: 42em;*/
+    max-width: 98%;;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  .main {
+    margin: auto;
+    /*max-width: 42em;*/
+    max-width: 70%;;
+  }
 }
 
 .main .header-bar {
