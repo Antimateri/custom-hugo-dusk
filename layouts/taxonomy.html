@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <h2 class="term-list-title">
-    <a href="{{ .Permalink }}" class="linktopost">{{ .Data.Singular | firstUpper }}</a>
+    <a href="{{ .Permalink }}" class="linktopost">{{ strings.FirstUpper .Data.Singular }}</a>
 </h2>
 
 {{ range .Data.Pages }}
